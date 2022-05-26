@@ -482,9 +482,10 @@ footer {
           padding: 0 10px; }
     .collaborator div .flag {
       position: absolute;
-      top: 0px;
+      top: 9px;
       right: 30px;
       width: 30px;
+      height: 20px;
       opacity: .9;
       margin: 0;
       padding: 0;
