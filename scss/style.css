@@ -36,7 +36,7 @@ input {
   #homevideo-game-logo {
     top: 0.7vh; }
   #wishlist-banner {
-    top: 32vw;
+    top: calc(32vw + 30px);
     width: 104.5%;
     left: -2%; }
   .under-header {
