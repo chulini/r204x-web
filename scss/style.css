@@ -521,7 +521,8 @@ footer {
       padding: 5px 0 5px 15px;
       font-family: 'Exo 2', sans-serif;
       color: #eee;
-      font-size: 24px; }
+      font-size: 24px;
+      display: block; }
     .collaborator div p a {
       font-weight: bold;
       background-color: #e41378;
