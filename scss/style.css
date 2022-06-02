@@ -429,7 +429,8 @@ footer {
     font-size: large; }
 
 .post-content {
-  background-color: #82145d; }
+  background-color: #82145d;
+  padding: 0 0 20px 0; }
   .post-content h2 {
     margin: 20px;
     font-family: 'Exo 2', sans-serif;
@@ -442,6 +443,63 @@ footer {
     .post-content h2 a {
       color: #333;
       text-decoration: none; }
+  .post-content h3 {
+    margin: 40px 20px 5px 40px;
+    font-family: 'Exo 2', sans-serif;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 8px;
+    background: #ffff00;
+    display: inline-block;
+    clear: both; }
+    .post-content h3 a {
+      color: #333;
+      text-decoration: none; }
+  .post-content .centred-content {
+    align-items: center;
+    text-align: center; }
+  .post-content iframe {
+    align-self: center;
+    margin: 10px auto;
+    display: block; }
+  .post-content .center-link {
+    margin: 10px auto;
+    background-color: #e41378;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 8px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    width: 300px; }
+  .post-content .center-button {
+    color: #333;
+    background-color: #ffff00;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    line-height: 36px; }
+  .post-content .clear-both {
+    display: block;
+    clear: both; }
+  .post-content a {
+    background-color: #e41378;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    line-height: 24px; }
+  .post-content p {
+    margin: 5px 90px 10px 40px; }
+  .post-content ul {
+    margin: 10px 10px 10px 60px; }
+    .post-content ul li {
+      margin: 5px 0px;
+      list-style-type: square;
+      font-weight: bold; }
 
 .collaborator {
   margin: 10px 0;
@@ -573,3 +631,24 @@ footer {
   margin: 0; }
   .menu__box li a.active {
     background-color: #e41378; }
+
+#slideshow {
+  margin: 20px auto;
+  position: relative;
+  width: calc(100% - 0px);
+  height: 400px;
+  padding: 0px; }
+
+#slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  align-items: center;
+  align-content: center; }
+  #slideshow > div img {
+    margin: 0 auto;
+    height: 400px;
+    display: block; }

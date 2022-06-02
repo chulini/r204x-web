@@ -23,7 +23,7 @@
         <li class="desktop-only"><a href="/">Home</a></li>
         <!-- <li class="desktop-only"><a href="/blog">DevBlog</a></li> -->
         <li class="desktop-only"><a href="/team">Team</a></li>
-        <!-- <li class="desktop-only active "><a href="/presskit">Press Kit</a></li> -->
+        <li class="desktop-only active "><a href="/presskit">Press Kit</a></li>
         <li class="desktop-only"><a href="mailto:jq@resistance204x.com" target="_blank">Contact</a></li>
         <li class="float-right"><a href="https://reddit.com/r/resistance204x" target="_blank"><img src="/images/social-networks/reddit.png"></a></li>
         <li class="float-right"><a href="https://gamejolt.com/games/resistance204x/661625" target="_blank"><img src="/images/social-networks/gamejolt.png"></a></li>
@@ -40,10 +40,27 @@
     
         <ul class="menu__box">
           <li><a class="menu__item" href="/">Home</a></li>
+          <li><a class="menu__item active " href="/presskit">Press Kit</a></li>
           <li><a class="menu__item" href="/team">Team</a></li>
           <li><a class="menu__item" href="mailto:jq@resistance204x.com">Contact</a></li>
         </ul>
       </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+$( document ).ready(function(){
+  $("#slideshow > div:gt(0)").hide();
+  setInterval(function() {
+    $('#slideshow > div:first')
+    .fadeOut(300)
+    .next()
+    .fadeIn(300)
+    .end()
+    .appendTo('#slideshow');
+  }, 1000);
+});
+</script>
 
 </header>
 
@@ -52,27 +69,86 @@
     <!-- <div class="box-separator-big box"></div> -->
     <div class="post-content">
         <!-- <h2 class="title"><a href="/presskit/index.html">Press Kit</a></h2> -->
-        <h1 id="Release-Date"><a href="#Release-Date" class="headerlink" title="Release Date"></a>Release Date</h1><p>A playable demo is planned for the end of 2022.</p>
-<h1 id="Price"><a href="#Price" class="headerlink" title="Price"></a>Price</h1><p>Free to play.</p>
-<h1 id="Contact-Info"><a href="#Contact-Info" class="headerlink" title="Contact Info"></a>Contact Info</h1><p><a href="mailto:&#x6a;&#x71;&#x40;&#114;&#101;&#115;&#105;&#115;&#x74;&#x61;&#x6e;&#x63;&#x65;&#x32;&#x30;&#x34;&#x78;&#x2e;&#x63;&#111;&#x6d;">&#x6a;&#x71;&#x40;&#114;&#101;&#115;&#105;&#115;&#x74;&#x61;&#x6e;&#x63;&#x65;&#x32;&#x30;&#x34;&#x78;&#x2e;&#x63;&#111;&#x6d;</a><br>@chulini at twitter</p>
-<h1 id="Socials"><a href="#Socials" class="headerlink" title="Socials"></a>Socials</h1><p>twitter: <a target="_blank" rel="noopener" href="https://twitter.com/resistance204x">https://twitter.com/resistance204x</a><br>instagram: <a target="_blank" rel="noopener" href="https://www.instagram.com/resistance204x/">https://www.instagram.com/resistance204x/</a><br>gamejolt: <a target="_blank" rel="noopener" href="https://gamejolt.com/games/resistance204x/661625">https://gamejolt.com/games/resistance204x/661625</a><br>reddit: <a target="_blank" rel="noopener" href="https://www.reddit.com/r/resistance204x/">https://www.reddit.com/r/resistance204x/</a></p>
-<h1 id="Website"><a href="#Website" class="headerlink" title="Website"></a>Website</h1><p><a href="https://resistance204x.com/">https://resistance204X.com</a></p>
-<h1 id="Descrption"><a href="#Descrption" class="headerlink" title="Descrption"></a>Descrption</h1><p>Designed to introduce new players into fighting games, Resistance 204X, is a fast-paced footsies-based 2D indie fighting game currently in development for PC and Mobile.</p>
-<p>The game is from the beginning to implement Rollback Netcode ensuring the player responsive online matches with low latency.</p>
-<p>READ, REACT AND TRICK YOUR OPPONENT!<br>Play strategically. Knock out your opponent by breaking their guard with your combos, punish them at the right moment or trick them with throws, pokes, and cross-ups.</p>
-<p>MAKE COMBOS AND SPECIAL ATTACKS WITHOUT BLEEDING YOUR THUMB!<br>Training execution for days before playing online is not needed for this game. Go straight to the fun playing the mind game of fighting games.</p>
-<p>LEARN FIGHTING GAME CONCEPTS BY PLAYING!<br>Don’t know what cross-counter, priority, or cross-up hits are? Don’t worry! The game will show you them as they happen, and you’ll learn by playing.</p>
-<p>CROSS THE GOAL AND WIN THE MATCH!<br>Defeat your opponent, run fast as possible and cross the goal at the end of the stage to win the match.</p>
-<p>Gameplay<br>Diseñado desde un principio para introducir nuevos jugadores a la escena de los videojuegos de pelea, Resistance 204X es un videojuego independiente actualmente en desarrollo para PC y dispositivos móviles.</p>
-<p>El objetivo del juego es simple. Derrota a tu oponente y corre hacia adelante lo más rápido que puedas. Si logras cruzar la linea de meta al final de la etapa ganaste el match!</p>
-<p>El personaje se controla solo con las flechas y dos botones de ataque. Haciendolo muy fácil de aprender, sin embargo, el ritmo rápido fuerza al jugador a entrenar su reacción instantánea, la predicción y el engaño, mientras al mismo tiempo, las plataformas y la condición de ganado incentivan el posicionamiento estratégico. Resultando así en un gameplay produndo e interesante.</p>
-<p>Lore<br>El juego se da en el contexto de un futuro distópico, donde la sociedad ya no se desarrolla en el mundo real si no que en un metaverso VR llamado Akkadia, el cual es de propiedad de Facecorp, una megacorporación que posee el monopolio del mercado mundial.</p>
-<p>Zargon7, the CEO de Facecorp y rey de Akkadia, organiza un torneo de pelea que mantiene a la gente entretenida, pasiva y sin pensamiento crítico. </p>
-<p>La resistencia es una pequeña organización secreta que planea quitar a Zargon7 de su reinado quitandole sus pivilegios de administrador, sin embargo, ganar el torneo de pelea es clave para el plan tenga éxito. Zer0, la protagonista y primer personaje jugable del juego, es una agente secreto de la resistencia y entrena día y noche para ganar el torneo y llevar a cabo el plan de forma exitosa.</p>
-<p>Motivación<br>“Creo que los juegos de pelea se han vuelto innecesariamente complicados poniendo trabas muchas veces innecesarias a nuevos jugadores. Para mi los juegos de pelea se tratan de destreza mental, positionamiento estratégico, adquirir momentum predeciendo y engañando a tu oponente. </p>
-<p>No debería ser necesario practicar por semanas y ser bulleado una y otra vez por no saber ejecutar movimientos básicos. Resistance 204X es mi intento de llevar ese juego mental de los juegos de pelea al público general y así hacer crecer la increible comunidad de juegos de pelea” dice Julio Quiroz, el desarrollador del videojuego.</p>
-<p>Planes Futuros<br>Julio, el desarrollador chileno del juego, lleva mas de un año en Alemania trabajando  en el juego y planea tener un demo early access disponible para PC a fines del 2022.</p>
-<p>Resistance 204X ya está disponible para wishlist en steam y Julio está actualmente regalando códigos de early access de forma gratuita en su sitio web <a href="https://resistance204x.com/">https://resistance204X.com</a></p>
+        <h2 id="Media-Kit"><a href="#Media-Kit" class="headerlink" title="Media Kit"></a>Media Kit</h2><p><a class="link-button center-button" href="https://drive.google.com/uc?id=1FhxKW-xdg9EZlVvcvCiRttSYeJ77WHnp&export=download" target="_blank">Download Media Kit</a></p>
+<blockquote>
+</blockquote>
+<div id="slideshow">
+   <div>
+    <img src="/images/media-kit-preview/0.jpg" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/1.png" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/2.png" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/3.png" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/4.jpg" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/5.jpg" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/6.jpg" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/7.jpg" />
+   </div>
+    <div>
+     <img src="/images/media-kit-preview/8.gif" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/9.png" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/10.jpg" />
+   </div>
+   <div>
+     <img src="/images/media-kit-preview/11.gif" />
+   </div>
+</div>
+
+
+
+<h2 id="Game-info"><a href="#Game-info" class="headerlink" title="Game info"></a>Game info</h2><div class="clear-both"></div>
+<div class="centered-content">
+<a class="center-link" target="_blank" rel="noopener" href="https://docs.google.com/document/d/1a3CgM2W4NpirnEfe0hdFQBCxtNkMsA4SR1RcZgCEUjY/edit?usp=sharing">Open in google docs</a>
+</div>
+
+<h3 id="Gameplay-Trailer"><a href="#Gameplay-Trailer" class="headerlink" title="Gameplay Trailer"></a>Gameplay Trailer</h3><div class="centered-content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Pej0c23gyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a class="center-link" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_Pej0c23gyI">Watch on YouTube</a>
+<a class="center-link" target="_blank" rel="noopener" href="https://drive.google.com/uc?id=17AYRjYDV6c3sxz3DhfKjPGrm9Ki1WOVc&export=download">Download Video 4K</a>
+<a class="center-link" target="_blank" rel="noopener" href="https://drive.google.com/uc?id=1r7pF4cB-WJ_ZMoitdFY8RImzorvgK5r8&export=download">Download Video HD</a>
+</div>
+
+
+<h3 id="Descrption"><a href="#Descrption" class="headerlink" title="Descrption"></a>Descrption</h3><p>Designed to introduce new players into fighting games, Resistance 204X, is a fast-paced footsies-based 2D indie fighting game currently in development for PC and Mobile.</p>
+<p>Fight against other players locally or cross-play online. </p>
+<p>The goal is simple: KO your opponent, run fast as possible and cross the goal at the end of the stage to win the match.</p>
+<p>Play strategically. Break your opponent’s guard with your combos, punish them at the right moment, or trick them with throws, pokes, and cross-ups.</p>
+<p>The characters are controlled only with directions and two attack buttons, making the game very easy to learn. However, the fast pacing pushes the player to train his instant reaction, prediction, and deception, while at the same time, the platforming and the win condition encourage strategic positioning, resulting in deep and interesting gameplay.</p>
+<p>Rollback Netcode ensures a responsive and low latency experience.</p>
+<h3 id="Soundtrack-Preview"><a href="#Soundtrack-Preview" class="headerlink" title="Soundtrack Preview"></a>Soundtrack Preview</h3><div class="centered-content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TRDIApTWTaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><a class="center-link" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=TRDIApTWTaA&list=PL-n_r4RQHRpuDmEBdoMnlhELAVVZGVwNl">Listen on YouTube</a></p>
+</div>
+
+<h3 id="Release-Date"><a href="#Release-Date" class="headerlink" title="Release Date"></a>Release Date</h3><p>An early demo is planned to be released during the last quarter of 2022. </p>
+<h3 id="Supported-Platforms"><a href="#Supported-Platforms" class="headerlink" title="Supported Platforms"></a>Supported Platforms</h3><p>PC, Android, iOS</p>
+<h3 id="Price"><a href="#Price" class="headerlink" title="Price"></a>Price</h3><p>All characters are free to play.<br>A customizable + exclusive content version of the game (PC only) will cost 14 USD.</p>
+<h3 id="Contact-Info"><a href="#Contact-Info" class="headerlink" title="Contact Info"></a>Contact Info</h3><p>Julio Quiroz A.<br><a href="mailto:jq@resistance204X.com">jq@resistance204x.com</a><br><a target="_blank" rel="noopener" href="https://twitter.com/chulini">@chulini</a> at twitter</p>
+<h3 id="Socials"><a href="#Socials" class="headerlink" title="Socials"></a>Socials</h3><ul>
+<li>Twitter: <a target="_blank" rel="noopener" href="https://twitter.com/resistance204x">https://twitter.com/resistance204x</a></li>
+<li>Instagram: <a target="_blank" rel="noopener" href="https://www.instagram.com/resistance204x/">https://www.instagram.com/resistance204x/</a></li>
+<li>Gamejolt: <a target="_blank" rel="noopener" href="https://gamejolt.com/games/resistance204x/661625">https://gamejolt.com/games/resistance204x/661625</a></li>
+<li>Reddit: <a target="_blank" rel="noopener" href="https://www.reddit.com/r/resistance204x/">https://www.reddit.com/r/resistance204x/</a></li>
+</ul>
+<h3 id="Website"><a href="#Website" class="headerlink" title="Website"></a>Website</h3><p><a href="https://resistance204x.com/">https://resistance204X.com</a></p>
 
     </div>
     <div class="box-separator-big"></div>
