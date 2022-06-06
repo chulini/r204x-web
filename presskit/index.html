@@ -40,27 +40,27 @@
     
         <ul class="menu__box">
           <li><a class="menu__item" href="/">Home</a></li>
-          <li><a class="menu__item active " href="/presskit">Press Kit</a></li>
           <li><a class="menu__item" href="/team">Team</a></li>
+          <li><a class="menu__item active " href="/presskit">Press Kit</a></li>
           <li><a class="menu__item" href="mailto:jq@resistance204x.com">Contact</a></li>
         </ul>
       </div>
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-$( document ).ready(function(){
-  $("#slideshow > div:gt(0)").hide();
-  setInterval(function() {
-    $('#slideshow > div:first')
-    .fadeOut(300)
-    .next()
-    .fadeIn(300)
-    .end()
-    .appendTo('#slideshow');
-  }, 1000);
-});
-</script>
+  <script>
+    $( document ).ready(function(){
+      $("#slideshow > div:gt(0)").hide();
+      setInterval(function() {
+        $('#slideshow > div:first')
+        .fadeOut(300)
+        .next()
+        .fadeIn(300)
+        .end()
+        .appendTo('#slideshow');
+      }, 1000);
+    });
+  </script>
 
 </header>
 
