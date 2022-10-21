@@ -653,3 +653,6 @@ footer {
     margin: 0 auto;
     height: 400px;
     display: block; }
+
+.centered-content {
+  text-align: center; }
