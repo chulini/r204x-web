@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64x64.png">
+<link rel="icon" type="image/png" sizes="128x128" href="/images/favicon-128x128.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/scss/style.css">
+
+<title>Resistance 204X</title>
+
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    
+    <body>
+        <div class="wrapper">
+            <header>
+    <ul class="nav-bar" >
+        <li class="desktop-only"><a href="/">Home</a></li>
+        <!-- <li class="desktop-only"><a href="/blog">DevBlog</a></li> -->
+        <li class="desktop-only"><a href="/team">Team</a></li>
+        <li class="desktop-only"><a href="/presskit">Press Kit</a></li>
+        <li class="desktop-only"><a href="/twitch-connect-commands">Twitch Commands</a></li>
+        <li class="desktop-only"><a href="/how-to-support">How to support the game?</a></li>
+        <li class="desktop-only"><a href="mailto:julio@resistance204x.com" target="_blank">Contact</a></li>
+        <li class="float-right"><a href="https://reddit.com/r/resistance204x" target="_blank"><img src="/images/social-networks/reddit.png"></a></li>
+        <li class="float-right"><a href="https://gamejolt.com/games/resistance204x/661625" target="_blank"><img src="/images/social-networks/gamejolt.png"></a></li>
+        <li class="float-right"><a href="https://twitter.com/resistance204x" target="_blank"><img src="/images/social-networks/twitter.png"></a></li>
+        <li class="float-right"><a href="https://discord.gg/kYxSgY5vCp" target="_blank"><img src="/images/social-networks/discord.png"></a></li>
+        
+    </ul>
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="/">Home</a></li>
+          <li><a class="menu__item" href="/team">Team</a></li>
+          <li><a class="menu__item" href="/presskit">Press Kit</a></li>
+          <li><a class="menu__item" href="/twitch-connect-commands">Twitch Commands</a></li>
+          <li><a class="menu__item" href="/how-to-support">How to support the game?</a></li>
+          <li><a class="menu__item" href="mailto:julio@resistance204x.com">Contact</a></li>
+        </ul>
+      </div>
+
+
+</header>
+
+
+            
+    <!-- <div class="box-separator-big box"></div> -->
+    <div class="post-content">
+        <!-- <h2 class="title"><a href="/twitch-authorization/index.html">Twitch Authorization Code</a></h2> -->
+        <!-- https://resistance204x.com/twitch-authorization/#access_token=lm1abv0jf9u25hdg4skvhpgr76o1jl&scope=chat%3Aread&token_type=bearer -->
+<!--  http://localhost:4000/twitch-authorization/#access_token=lm1abv0jf9u25hdg4skvhpgr76o1jl&scope=chat%3Aread&token_type=bearer --> 
+
+
+<h1 id="instructions">Please copy the authorization code and paste it into the game</h1>
+<br/>
+<div class="centered-content">
+<input id="access-code" name="access-code" type="password" disabled>
+<button id="copy-button" onclick="copyToClipboard()">Copy</button>
+</div>
+
+<script>   
+
+function findGetParameter(parameterName) {
+    console.log(location.href);
+    var result = null,
+        tmp = [];
+    location.href
+        .split('/twitch-authorization/#')[1]
+        .split("&")
+        .forEach(function (item) {
+            console.log(item)
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
+
+function copyToClipboard() {
+  // Get the text field
+  let tokenInput = document.getElementById("access-code");
+  // Select the text field
+  tokenInput.select();
+  tokenInput.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(tokenInput.value);
+
+  // Alert the copied text
+//   alert("Copied the text: " + tokenInput.value);
+    let copyButton = document.getElementById("copy-button");
+    console.log(copyButton)
+    copyButton.innerHTML ="Copied!";
+    document.getElementById('instructions').innerHTML = 'Authorization code is now in your clipboard.<br/>Please paste it back into the game.';
+}
+
+
+let token = findGetParameter('access_token');
+let textInput = document.getElementById("access-code");
+textInput.value = token;
+
+window.history.replaceState({}, document.title, "/twitch-authorization/");
+
+</script>
+    </div>
+    <div class="box-separator-big"></div>
+
+
+            
+        </div>
+        <footer>
+  <p>Web designed and developed with ❤️ by Julio Quiroz</p>
+</footer>
+
+    
+
+    </body>   
+
+</html>
