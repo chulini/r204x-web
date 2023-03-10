@@ -21,7 +21,7 @@
             <header>
     <ul class="nav-bar" >
         <li class="desktop-only"><a href="/">Home</a></li>
-        <li class="desktop-only"><a href="/beta">Get <u>free beta access</u></a></li>
+        <li class="desktop-only active "><a href="/beta">Get <u>free beta access</u></a></li>
         <!-- <li class="desktop-only"><a href="/blog">DevBlog</a></li> -->
         <li class="desktop-only"><a href="/team">Team</a></li>
         <li class="desktop-only"><a href="/presskit">Press Kit</a></li>
@@ -43,7 +43,7 @@
     
         <ul class="menu__box">
           <li><a class="menu__item" href="/">Home</a></li>
-          <li><a class="menu__item" href="/beta">How to get beta access?</a></li>
+          <li><a class="menu__item active " href="/beta">How to get beta access?</a></li>
           <li><a class="menu__item" href="/team">Team</a></li>
           <li><a class="menu__item" href="/presskit">Press Kit</a></li>
           <li><a class="menu__item" href="/twitch-connect-commands">Twitch Commands</a></li>
@@ -58,56 +58,21 @@
             
     <!-- <div class="box-separator-big box"></div> -->
     <div class="post-content">
-        <!-- <h2 class="title"><a href="/twitch-authorization/index.html">Twitch Authorization Code</a></h2> -->
-        <h1 id="instructions">Please copy the authorization code and paste it into the game</h1>
-<br/>
+        <!-- <h2 class="title"><a href="/beta/index.html">How to Get Beta Access?</a></h2> -->
+        <div class="clear-both"></div>
+
+<h2 id="How-to-get-beta-access"><a href="#How-to-get-beta-access" class="headerlink" title="How to get beta access?"></a>How to get beta access?</h2><p>To get beta acces you just need to go to the steam page and click two buttons: </p>
+<ul>
+<li>“Add to your wishlist” and </li>
+<li>“Request access”</li>
+</ul>
+<p>Steam page:<br><a target="_blank" rel="noopener" href="https://store.steampowered.com/app/1829140/Resistance_204X/">https://store.steampowered.com/app/1829140/Resistance_204X&#x2F;</a></p>
 <div class="centered-content">
-<input id="access-code" name="access-code" type="password" disabled>
-<button id="copy-button" onclick="copyToClipboard()">Copy</button>
+    <img src="../images/how-to-beta.png" />
 </div>
 
-<script>   
+<p>Easy as that! Let me know your suggestions in our <a target="_blank" rel="noopener" href="https://discord.gg/kYxSgY5vCp">Discord Server</a>!</p>
 
-function findGetParameter(parameterName) {
-    console.log(location.href);
-    var result = null,
-        tmp = [];
-    location.href
-        .split('/twitch-authorization/#')[1]
-        .split("&")
-        .forEach(function (item) {
-            console.log(item)
-          tmp = item.split("=");
-          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-        });
-    return result;
-}
-
-
-function copyToClipboard() {
-  // Get the text field
-  let tokenInput = document.getElementById("access-code");
-  // Select the text field
-  tokenInput.select();
-  tokenInput.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(tokenInput.value);
-
-  // Alert the copied text
-    let copyButton = document.getElementById("copy-button");
-    copyButton.innerHTML ="Copied!";
-    document.getElementById('instructions').innerHTML = 'Authorization code is now in your clipboard.<br/>Please paste it back into the game.';
-}
-
-
-let token = findGetParameter('access_token');
-let textInput = document.getElementById("access-code");
-textInput.value = token;
-
-window.history.replaceState({}, document.title, "/twitch-authorization/");
-
-</script>
     </div>
     <div class="box-separator-big"></div>
 
